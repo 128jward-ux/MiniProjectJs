@@ -18,3 +18,23 @@ let totalPay;
 
 totalPay = hourlyWage * grossPay
 console.log("total Pay:" + totalPay)
+
+// Grade Calculator
+
+let Pointsearned = 45.5;
+let pointsTotal = 50;
+let percentGrade;
+
+let totalGrade;
+
+percentGrade = Pointsearned / pointsTotal
+console.log("percentGrade:" + percentGrade * 100)
+
+// Gas Cost Calucator
+
+let gallons = 12;
+let cost = 4.49;
+let totalCost;
+
+totalCost = cost * gallons
+console.log("totalCost" + totalCost)
