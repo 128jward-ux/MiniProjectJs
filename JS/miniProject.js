@@ -1,15 +1,40 @@
-// Tip calcuator project 
+let tipOputput = document.getElementById ('tipAmountOutput');
+let totalOutput = document.getElementById('totalBillOutput');
+let checkOutput = document.getElementById('paycheckAmountOutput');
+let gradeOutput = document.getElementById('percentGradeOutput');
+let gasOutput = document.getElementById('gasCostOutput');
+
+let tipBtn = document.getElementById("tipButton");
+tipBtn.addEventListener('click', function () {
+
+
+//Tip Calulator Varibles
+let subTotal = document.getElementById('subTotalInput').valueAsNumber;
+let percentage = document.getElementById('percentageInput').valueAsNumber;
 let tipAmount;
-let subTotal = 67.72;
-let percentage = 0.2;
 let totalBill;
 
+
+// Do the Math
+
 tipAmount = subTotal * percentage;
-console.log("Tip Amount:" + tipAmount.toFixed(2));
-
 totalBill = subTotal + tipAmount;
-console.log("Total amount due:"+ totalBill.toFixed(2));
 
+// Only show 2 decimal places
+tipAmount = tipAmount.toFixed(2);
+totalBill = subTotal + tipAmount;
+
+// Show the output
+
+tipOputput.innerHTML = "$" + tipAmount;
+tipOputput.innerHTML = "$" + totalBill;
+
+} )
+
+let paycheckBtn = document.getElementById("paycheckButton");
+paycheckBtn.addEventListener('click', function () {
+
+} )
 // Hourly Pay Calculator 
 
 let hourlyWage = 16.10;
