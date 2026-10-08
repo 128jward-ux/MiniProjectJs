@@ -63,3 +63,19 @@ let totalCost;
 
 totalCost = cost * gallons
 console.log("totalCost" + totalCost)
+
+// Dice Roll
+
+let numberRolled;
+
+// Do The Math
+numberRolled = Math.floor(Math.random()) * 6 + 1;
+
+numberRolled = Math.floor(numberRolled);
+
+gasCost
+
+
+// Name Genrator
+
+let = name;
